@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    height: 100%;
+    display: Flex;
+    background-color: #122133;
+  }
+  
+  main {
+    display: Flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items: center;
+    background-color: #122133;
+    padding: 0 0 2rem 0;
+  }
+  
+  main h1 {
+    color: #1eb9d6;
+    margin: 4rem auto;
+  }
+  
+  /*Pesquisar Filmes*/
+  
+  .pesquisa input {
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+  
+  .pesquisa button {
+    padding: 0.3rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /*Seção com filmes*/
+  main .container {
+    width: 100%;
+    height: auto;
+    justify-content: Center;
+    flex-wrap: wrap;
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  /*Mensagem de Erro*/
+  
+  main #errorMensage {
+    font-size: 1.6rem;
+    display: none;
+  }
+  
+  /*Filme-card*/
+  
+  main .container .filme {
+    height: 38rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1eb9d6;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+    justify-content: center;
+    filter: brightness(0.7);
+  }
+  
+  main .container .filme:hover {
+    scale: 1.05;
+    filter: brightness(1);
+  }
+  
+  main .container .filme img {
+    height: 25rem;
+    width: 20rem;
+    background-color: blue;
+    border-radius: 15px;
+  }
+  
+  main .container .filme h1 {
+    font-size: 1.7rem;
+    color: #cf0845;
+    line-height: 1.7rem;
+  }
+  
+  main .container .filme p {
+    font-size: 1.4rem;
+    color: yellow;
+    position: absolute;
+    margin-bottom: 34rem;
+    margin-left: 15rem;
+    font-weight: 700;
+    background-color: #00000099;
+    padding: 1rem;
+    border-radius: 15px;
+  }
+  
+  /*Botoes de voltar e avançar*/
+  
+  .botoes button {
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 15px;
+    transition: 1s;
+    width: 5rem;
+  }
+  
+  .botoes button:hover {
+    scale: 1.1;
+    background-color: #ccc;
+  }
+  
+  .botoes #voltar {
+    display: none;
+  }
+  
+  /*Detalhes do filme*/
+  
+  @keyframes showDetails {
+    to {
+      transform: translatey(0);
+    }
+  }
+  
+  @keyframes desaparecerDetails {
+    from {
+      transform: translate(0);
+    }
+  
+    to {
+      transform: translatey(-500px);
+    }
+  }
+  
+  .detalhes {
+    background-color: #1eb9d6;
+    padding: 2rem;
+    width: 80%;
+    height: auto;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    position: absolute;
+    z-index: 1;
+    transform: translatey(-500px);
+    animation: ;
+    position: fixed;
+  }
+  
+  .detalhes h1 {
+    color: #cf0845;
+  }
+  
+  .detalhes p {
+    color: #fff;
+    flex-wrap: wrap;
+    font-size: 1.4rem;
+  }
+  
+  .detalhes img {
+    width: 4rem;
+    height: 4rem;
+    background-color: red;
+    transition: 1s;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .detalhes img:hover {
+    background-color: #3b3b3b;
+  }
+  
