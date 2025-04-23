@@ -4,6 +4,13 @@
     box-sizing: border-box;
   }
   
+  @font-face {
+    font-family: 'Poppins';
+    src: url('Poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   html {
     font-size: 62.5%;
   }
@@ -11,7 +18,8 @@
   body {
     height: 100%;
     display: Flex;
-    background-color: #122133;
+    background-color: #121212;
+    font-family: 'Poppins', sam-serif;
   }
   
   main {
@@ -20,13 +28,14 @@
     height: auto;
     width: 100%;
     align-items: center;
-    background-color: #122133;
+    background-color: #121212;
     padding: 0 0 2rem 0;
   }
   
   main h1 {
-    color: #1eb9d6;
+    color: #e0e0e0;
     margin: 4rem auto;
+    font-size:4rem
   }
   
   /*Pesquisar Filmes*/
@@ -34,12 +43,14 @@
   .pesquisa input {
     padding: 0.3rem;
     border-radius: 5px;
+    font-size: 1.6rem;
   }
   
   .pesquisa button {
     padding: 0.3rem;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.6rem;
   }
   
   /*Seção com filmes*/
@@ -69,7 +80,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1eb9d6;
+    background-color: #2a2a40;
     border-radius: 15px;
     text-align: center;
     cursor: pointer;
@@ -91,8 +102,8 @@
   }
   
   main .container .filme h1 {
-    font-size: 1.7rem;
-    color: #cf0845;
+    font-size: 2rem;
+    color: #e0e0e0;
     line-height: 1.7rem;
   }
   
@@ -109,7 +120,7 @@
   }
   
   /*Botoes de voltar e avançar*/
-  
+
   .botoes button {
     cursor: pointer;
     padding: 5px;
@@ -146,7 +157,7 @@
   }
   
   .detalhes {
-    background-color: #1eb9d6;
+    background-color: #2a2a40;
     padding: 2rem;
     width: 80%;
     height: auto;
@@ -165,7 +176,7 @@
   }
   
   .detalhes h1 {
-    color: #cf0845;
+    color: #e0e0e0;
   }
   
   .detalhes p {
@@ -177,7 +188,7 @@
   .detalhes img {
     width: 4rem;
     height: 4rem;
-    background-color: red;
+    background-color: #e0e0e0;
     transition: 1s;
     border-radius: 50%;
     cursor: pointer;
